@@ -1,0 +1,10 @@
+target distance100. step length:20
+12
+target distance100. step length:15
+171
+target distance100. step length:17
+58
+target distance100. step length:21
+41
+target distance1. step length:1
+1
