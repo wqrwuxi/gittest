@@ -1,0 +1,36 @@
+
+[wqr@localhost 12-2]$ ./work
+num:1 String::String(const char* s): and I am a C++ student.  0x7ffc869638d0
+ and I am a C++ student.num:2 String::String(const char* s):Please enter your name:   0x7ffc869638b0
+num:3 default constructor:0x7ffc86963890
+Please enter your name: 
+WAng
+String& String::operator=(const char* s):WAng  0x7ffc86963890 ,from: 0x7ffc86963790
+
+num:4 default constructor:0x7ffc869638f0  //String operator+(const char s[], String &s1)中第一行代码
+String& String::operator=(const String &):My name is WAng  0x7ffc869638b0 ,from:0x7ffc869638f0 //s2 = "My name is " + s3 赋值给s2
+num:3  My name is WAng  0x7ffc869638f0 The object is destructed. //注意，先赋值，再析构
+
+My name is WAng.
+//以下3行和上面3行类似
+num:4 default constructor:0x7ffc86963910
+String& String::operator=(const String &):My name is WAng and I am a C++ student.  0x7ffc869638b0 ,from:0x7ffc86963910
+num:3  My name is WAng and I am a C++ student.  0x7ffc86963910 The object is destructed.
+
+The string \MY NAME IS WANG AND I AM A C++ STUDENT.\ contains 5'A' characters in it.
+String& String::operator=(const char* s):red  0x7ffc869638d0 ,from: 0x7ffc86963800
+num:4 String::String(const String &s):red  0x7ffc86963840 ,from: 0x7ffc869638d0
+num:5 String::String(const char* s):green  0x7ffc86963858
+num:6 String::String(const char* s):blue  0x7ffc86963870
+Enter the name of a primer color for mixing light: num:7 default constructor:0x7ffc86963820
+REd
+String& String::operator=(const char* s):REd  0x7ffc86963820 ,from: 0x7ffc86963790
+That's right!
+Bye!
+num:6  red  0x7ffc86963820 The object is destructed.
+num:5  blue  0x7ffc86963870 The object is destructed.
+num:4  green  0x7ffc86963858 The object is destructed.
+num:3  red  0x7ffc86963840 The object is destructed.
+num:2  WAng  0x7ffc86963890 The object is destructed.
+num:1  MY NAME IS WANG AND I AM A C++ STUDENT.  0x7ffc869638b0 The object is destructed.
+num:0  red  0x7ffc869638d0 The object is destructed.
